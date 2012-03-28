@@ -16,6 +16,12 @@ public class PrimeNumbers {
 	}
 	
 	public static ArrayList<Integer> primeNumberGen(int n) {
-		return new ArrayList<Integer>();
+		ArrayList<Integer> ret = new ArrayList<Integer>();
+		
+		if (n > 1) {
+			ret.add(2);
+		}
+		
+		return ret;
 	}
 }
