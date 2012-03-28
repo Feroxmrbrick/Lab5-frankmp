@@ -12,10 +12,6 @@ public class PrimeNumbers {
 			}
 		} 
 
-		if (n > 1) {
-			ret.add(n);
-		}
-
 		return ret;
 	}
 }
