@@ -22,6 +22,7 @@ public class PrimeNumbers {
 			ret.add(2);
 		}
 		
+		
 		return ret;
 	}
 }

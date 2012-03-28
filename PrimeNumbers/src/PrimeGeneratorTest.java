@@ -20,6 +20,11 @@ public class PrimeGeneratorTest {
 	public void testThree() {
 		assertEquals(list(2), PrimeNumbers.primeNumberGen(3));
 	}
+	
+	@Test
+	public void testFour() {
+		assertEquals(list(2, 3), PrimeNumbers.primeNumberGen(4));
+	}
 
 	private ArrayList<Integer> list(int... ints) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
