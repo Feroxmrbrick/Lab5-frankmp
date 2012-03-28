@@ -51,6 +51,11 @@ public class PrimeFactorsTest {
 	public void testTwelve() {
 		assertEquals(list(2, 2, 3), PrimeNumbers.generatePrimes(12));
 	}
+	
+	@Test
+	public void testBigNumber() {
+		assertEquals(list(2, 3, 3, 5, 7, 631, 937), PrimeNumbers.generatePrimes(372485610));
+	}
 
 	private ArrayList<Integer> list(int... ints) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
