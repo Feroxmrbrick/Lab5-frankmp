@@ -18,7 +18,7 @@ public class PrimeNumbers {
 	public static ArrayList<Integer> primeNumberGen(int n) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		
-		if (n > 1) {
+		if (n > 2) {
 			ret.add(2);
 		}
 		
