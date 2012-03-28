@@ -15,4 +15,7 @@ public class PrimeNumbers {
 		return ret;
 	}
 	
+	public static ArrayList<Integer> primeNumberGen(int n) {
+		return new ArrayList<Integer>();
+	}
 }
