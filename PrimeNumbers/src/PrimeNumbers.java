@@ -18,10 +18,25 @@ public class PrimeNumbers {
 	public static ArrayList<Integer> primeNumberGen(int n) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		
-		if (n > 2) {
-			ret.add(2);
-		}
+		int candidate = 2;
+		boolean isPrime;
 		
+		while (candidate < n) {
+			isPrime = true; 
+			
+			for (int i : ret) {
+				if (candidate % i == 0) {
+					isPrime = false;
+					break;
+				}
+			}
+			
+			if (isPrime) {
+				ret.add(candidate);
+			}
+			
+			candidate++;
+		}
 		
 		return ret;
 	}
