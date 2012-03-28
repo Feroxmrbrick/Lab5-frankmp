@@ -6,7 +6,7 @@ public class PrimeNumbers {
 		
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		
-		if (n % 2 == 0) {
+		while (n % 2 == 0) {
 			ret.add(2);
 			n /= 2;
 		}
